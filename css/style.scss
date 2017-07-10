@@ -231,6 +231,22 @@ html {
     font-size: 62.5%;
 }
 
+@media screen and (min-width: 320px)  {
+    html {
+        font-size: 53.3%;
+    }
+}
+@media screen and (min-width: 375px)  {
+    html {
+        font-size: 62.5%;
+    }
+}
+@media screen and (min-width: 414px)  {
+    html {
+        font-size: 69%;
+    }
+}
+
 body {
     line-height: 1.5;
     font-family: "Microsoft YaHei", Arial, Helvetica, sans-serif;
@@ -330,7 +346,6 @@ $blue:#00a0e9;
 $darkGreen:#01f6ff;
 .tourism {
     padding: percent(290) percent(30) 0;
-    height: 2051px;
     background: url('../images/mobile_bj.jpg') no-repeat top center;
     background-size: 100%;
     font-size: px2rem(30);
@@ -343,7 +358,7 @@ $darkGreen:#01f6ff;
 }
 
 .key {
-    margin-top: percent(408);
+    margin-top: percent(450);
     height: px2rem(52);
     line-height: px2rem(52);
     .key-txt {
@@ -376,14 +391,74 @@ $darkGreen:#01f6ff;
 
 .my-box {
     margin-top: percent(40);
+    overflow: hidden;
     .box-list {
         margin: percent(40) 0;
+        overflow: hidden;
         .gift {
+            position: relative;
             float: left;
             width: px2rem(91);
             height: px2rem(91);
             background: url('../images/gift-box.png') no-repeat center;
             background-size: 100%;
+            img {
+                position: absolute;
+                margin: auto;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                width: 50%;
+            }
+        }
+        &>.gift:not(:last-child) {
+            margin-right: 2%;
         }
     }
+}
+
+.dsn {
+    margin: percent(92) 0 percent(70);
+    text-align: center;
+    img {
+        width: percent(537);
+    }
+}
+
+.exchange {
+    &>div {
+        position: relative;
+        float: left;
+        margin-top: percent(60);
+        width: percent(332);
+    }
+    &>div:nth-child(2n) {
+        float: right;
+    }
+    .exchange-btn {
+        position: absolute;
+        bottom: px2rem(-15);
+        left: px2rem(-5);
+        padding: 0 px2rem(20);
+        color: #fff;
+        letter-spacing: 5px;
+        background: #f6b436;
+        .arrow {
+            position: absolute;
+            top:0;
+            right:-11%;
+            border:px2rem(18) solid transparent;
+            border-top:px2rem(18) solid #f6b436;
+            border-bottom:px2rem(18) solid #f6b436;
+        }
+    }
+}
+
+.warning {
+    margin-top: percent(800);
+    font-size: px2rem(24);
+    line-height: 3;
+    color: #336699;
+    text-align: center;
 }

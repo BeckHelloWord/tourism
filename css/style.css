@@ -114,6 +114,18 @@ body {
 html {
   font-size: 62.5%; }
 
+@media screen and (min-width: 320px) {
+  html {
+    font-size: 53.3%; } }
+
+@media screen and (min-width: 375px) {
+  html {
+    font-size: 62.5%; } }
+
+@media screen and (min-width: 414px) {
+  html {
+    font-size: 69%; } }
+
 body {
   line-height: 1.5;
   font-family: "Microsoft YaHei", Arial, Helvetica, sans-serif;
@@ -192,7 +204,6 @@ a:hover {
 
 .tourism {
   padding: 38.66667% 4% 0;
-  height: 2051px;
   background: url("../images/mobile_bj.jpg") no-repeat top center;
   background-size: 100%;
   font-size: 1.5rem;
@@ -203,7 +214,7 @@ a:hover {
     color: #fff; }
 
 .key {
-  margin-top: 54.4%;
+  margin-top: 60%;
   height: 2.6rem;
   line-height: 2.6rem; }
   .key .key-txt span {
@@ -230,12 +241,63 @@ a:hover {
   overflow: hidden; }
 
 .my-box {
-  margin-top: 5.33333%; }
+  margin-top: 5.33333%;
+  overflow: hidden; }
   .my-box .box-list {
-    margin: 5.33333% 0; }
+    margin: 5.33333% 0;
+    overflow: hidden; }
     .my-box .box-list .gift {
+      position: relative;
       float: left;
       width: 4.55rem;
       height: 4.55rem;
       background: url("../images/gift-box.png") no-repeat center;
       background-size: 100%; }
+      .my-box .box-list .gift img {
+        position: absolute;
+        margin: auto;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 50%; }
+    .my-box .box-list > .gift:not(:last-child) {
+      margin-right: 2%; }
+
+.dsn {
+  margin: 12.26667% 0 9.33333%;
+  text-align: center; }
+  .dsn img {
+    width: 71.6%; }
+
+.exchange > div {
+  position: relative;
+  float: left;
+  margin-top: 8%;
+  width: 44.26667%; }
+
+.exchange > div:nth-child(2n) {
+  float: right; }
+
+.exchange .exchange-btn {
+  position: absolute;
+  bottom: -0.75rem;
+  left: -0.25rem;
+  padding: 0 1rem;
+  color: #fff;
+  letter-spacing: 5px;
+  background: #f6b436; }
+  .exchange .exchange-btn .arrow {
+    position: absolute;
+    top: 0;
+    right: -11%;
+    border: 0.9rem solid transparent;
+    border-top: 0.9rem solid #f6b436;
+    border-bottom: 0.9rem solid #f6b436; }
+
+.warning {
+  margin-top: 106.66667%;
+  font-size: 1.2rem;
+  line-height: 3;
+  color: #336699;
+  text-align: center; }
