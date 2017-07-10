@@ -1,0 +1,241 @@
+* {
+  box-sizing: border-box; }
+
+a,
+abbr,
+acronym,
+address,
+applet,
+article,
+aside,
+audio,
+b,
+big,
+blockquote,
+body,
+canvas,
+caption,
+center,
+cite,
+code,
+dd,
+del,
+details,
+dfn,
+div,
+dl,
+dt,
+em,
+embed,
+fieldset,
+figcaption,
+figure,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+hgroup,
+html,
+i,
+iframe,
+img,
+ins,
+kbd,
+label,
+legend,
+li,
+mark,
+menu,
+nav,
+object,
+ol,
+output,
+p,
+pre,
+q,
+ruby,
+s,
+samp,
+section,
+small,
+span,
+strike,
+strong,
+sub,
+summary,
+sup,
+table,
+tbody,
+td,
+tfoot,
+th,
+thead,
+time,
+tr,
+tt,
+u,
+ul,
+var,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  vertical-align: baseline; }
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block; }
+
+html,
+body {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  -ms-tap-highlight-color: transparent;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  line-height: 1.5;
+  font-family: "Microsoft YaHei", Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased; }
+
+ol,
+li,
+ul {
+  list-style: none; }
+
+html {
+  -webkit-text-size-adjust: 100%; }
+
+a,
+div,
+header,
+span {
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0); }
+
+blockquote,
+q {
+  quotes: none; }
+
+blockquote:after,
+blockquote:before,
+q:after,
+q:before {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+input,
+textarea {
+  outline: 0;
+  resize: none; }
+
+html {
+  -webkit-text-size-adjust: none; }
+
+a {
+  text-decoration: none;
+  background: transparent;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none; }
+
+img {
+  width: 100%;
+  vertical-align: middle; }
+
+a:active {
+  outline: 0; }
+
+a:visited {
+  text-decoration: none; }
+
+a:hover {
+  text-decoration: none; }
+
+.clearfix::before {
+  content: ' ';
+  display: table; }
+
+.clearfix::after {
+  content: ' ';
+  display: table;
+  clear: both; }
+
+.fl {
+  float: left; }
+
+.fr {
+  float: right; }
+
+.tourism {
+  padding: 38.66667% 4% 0;
+  height: 2051px;
+  background: url("../images/mobile_bj.jpg") no-repeat top center;
+  background-size: 100%;
+  font-size: 1.5rem;
+  color: #ffe13b; }
+  .tourism .time {
+    font-size: 0.7rem;
+    text-align: center;
+    color: #fff; }
+
+.key {
+  margin-top: 54.4%;
+  height: 2.6rem;
+  line-height: 2.6rem; }
+  .key .key-txt span {
+    font-size: 1.8rem; }
+  .key .key-btn {
+    padding: 0 0.8rem;
+    color: #00a0e9;
+    border: 1px solid #00a0e9;
+    border-radius: 0.25rem;
+    -webkit-border-radius: 0.25rem;
+    -moz-border-radius: 0.25rem; }
+
+.open-btn {
+  display: block;
+  margin: 62.13333% auto 0;
+  width: 49.06667%; }
+
+.record {
+  height: 5rem;
+  margin: 9.33333% 0 3.06667%;
+  text-align: center;
+  font-size: 1.3rem;
+  color: #01f6ff;
+  overflow: hidden; }
+
+.my-box {
+  margin-top: 5.33333%; }
+  .my-box .box-list {
+    margin: 5.33333% 0; }
+    .my-box .box-list .gift {
+      float: left;
+      width: 4.55rem;
+      height: 4.55rem;
+      background: url("../images/gift-box.png") no-repeat center;
+      background-size: 100%; }
