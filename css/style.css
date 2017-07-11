@@ -291,6 +291,23 @@ a:hover {
   float: left;
   margin-top: 9.33333%;
   width: 44.26667%; }
+  .exchange > div img {
+    position: relative;
+    z-index: 2; }
+  .exchange > div::before {
+    content: "";
+    position: absolute;
+    bottom: 10%;
+    left: -1%;
+    width: 5%;
+    padding-top: 5%;
+    background: #d25f15;
+    transform: rotate(70deg);
+    -webkit-transform: rotate(70deg);
+    -moz-transform: rotate(70deg);
+    -o-transform: rotate(70deg);
+    -ms-transform: rotate(70deg);
+    z-index: 0; }
 
 .exchange > div:nth-child(2n) {
   float: right; }
@@ -302,7 +319,8 @@ a:hover {
   padding: 0 1rem;
   color: #fff;
   letter-spacing: 5px;
-  background: #f6b436; }
+  background: #f6b436;
+  z-index: 3; }
   .exchange .exchange-btn .arrow {
     position: absolute;
     top: 0;

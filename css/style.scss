@@ -458,6 +458,21 @@ $darkGreen:#01f6ff;
         float: left;
         margin-top: percent(70);
         width: percent(332);
+        img {
+            position: relative;
+            z-index: 2;
+        }
+        &::before {
+            content: "";
+            position: absolute;
+            bottom: 10%;
+            left: -1%;
+            width: 5%;
+            padding-top: 5%;
+            background: #d25f15;
+            @include transform(rotate(70deg));
+            z-index: 0;
+        }
     }
     &>div:nth-child(2n) {
         float: right;
@@ -470,6 +485,7 @@ $darkGreen:#01f6ff;
         color: #fff;
         letter-spacing: 5px;
         background: #f6b436;
+        z-index: 3;
         .arrow {
             position: absolute;
             top: 0;
